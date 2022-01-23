@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import {DeleteIcon} from 'packages/icons';
+import {EditIcon} from 'packages/icons';
 
 //👇 This default export determines where your story goes in the story list
 export default {
@@ -8,16 +8,16 @@ export default {
     * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
     * to learn how to generate automatic titles
     */
-    title: 'DeleteIcon',
-    component: DeleteIcon,
-  } as ComponentMeta<typeof DeleteIcon>;
+    title: 'Icons/EditIcon',
+    component: EditIcon,
+  } as ComponentMeta<typeof EditIcon>;
 
   //👇 We create a “template” of how args map to rendering
-const Template: ComponentStory<typeof DeleteIcon> = (args) => <DeleteIcon {...args} />;
+const Template: ComponentStory<typeof EditIcon> = (args) => <EditIcon {...args} />;
 
-export const FirstStory = Template.bind({});
+export const Default = Template.bind({});
 
-FirstStory.args = {
+Default.args = {
     /*👇 The args you need here will depend on your component */
 };
 
