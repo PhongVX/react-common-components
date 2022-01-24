@@ -1,5 +1,5 @@
 import React from 'react';
-import Delete from 'packages/icons/assets/Delete.svg';
+import Delete from '../../assets/Delete.svg';
 
 const DeleteIcon = (props) => {
     return (

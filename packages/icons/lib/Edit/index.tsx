@@ -1,5 +1,5 @@
 import React from 'react';
-import Edit from 'packages/icons/assets/Edit.svg';
+import Edit from '../../assets/Edit.svg';
 
 const EditIcon = (props) => {
     return (
