@@ -1,0 +1,54 @@
+// https://colorhunt.co/palette/3e8e7e7cd1b8fabb51faedc6
+
+$primary: (
+  "base":       #3E8E7E,
+  "lighten-5":  #edf7f5,
+  "lighten-4":  #cce8e3,
+  "lighten-3":  #b0dcd3,
+  "lighten-2":  #96d1c5,
+  "lighten-1":  #6ec0af,
+  "darken-1":   #77c3b4,
+  "darken-2":   #5eb8a6,
+  "darken-3":   #4eb19e,
+  "darken-4":   #429987,
+);
+
+$secondary: (
+  "base":       #FABB51,
+  "lighten-5":  #fef8ee,
+  "lighten-4":  #fef3e1,
+  "lighten-3":  #fdeed5,
+  "lighten-2":  #fde8c6,
+  "lighten-1":  #fce2b7,
+  "darken-1":   #fcd696,
+  "darken-2":   #fbce82,
+  "darken-3":   #fac873,
+  "darken-4":   #fabf5d,
+);
+
+$shades: (
+  "black":        #000000,
+  "white":        #FFFFFF,
+  "transparent":  transparent
+);
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "shades": $shades
+) !default;
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+    @if map-has-key($colors, $color) {
+      $curr_color: map-get($colors, $color);
+      @if map-has-key($curr_color, $type) {
+        @return map-get($curr_color, $type);
+      }
+    }
+    @warn "Unknown `#{$color}` - `#{$type}` in $colors.";
+    @return null;
+}
+  
