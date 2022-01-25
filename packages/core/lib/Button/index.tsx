@@ -13,17 +13,6 @@ export interface ButtonProps {
   className?: string
 }
 
-const defaultProps:ButtonProps = {
-  children: '',
-  size: 'medium',
-  color: 'primary',
-  variant: 'text',
-  disabled: false,
-  style: undefined,
-  onClick: undefined,
-  className: '',
-};
-
 const Button:React.FC<ButtonProps> = (props) => {
   const { children, color, size, disabled, style, onClick, className, ...restProps } = props;
   return (
@@ -38,7 +27,5 @@ const Button:React.FC<ButtonProps> = (props) => {
     </button>
   )
 };
-
-Button.defaultProps = defaultProps;
 
 export default Button;

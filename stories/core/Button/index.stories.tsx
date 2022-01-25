@@ -23,7 +23,8 @@ export const Default = Template.bind({});
 
 Default.args = {
     /*👇 The args you need here will depend on your component */
-    children: 'Default'
+    children: 'Default',
+    color: 'primary'
 };
 
 export const Primary = Template.bind({});
