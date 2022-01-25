@@ -5,7 +5,7 @@ import './styles.scss';
 export interface ButtonProps {
   children?: any
   size?: 'medium' | 'large' | 'small'
-  color?: 'primary' | 'secondary'
+  color?: 'primary' | 'secondary' | ''
   variant?: 'contained' | 'outlined' | 'text'
   disabled?: boolean
   style?: object
@@ -13,11 +13,22 @@ export interface ButtonProps {
   className?: string
 }
 
+const defaultProps:ButtonProps = {
+  children: '',
+  size: 'medium',
+  color: '',
+  variant: 'contained',
+  disabled: false,
+  style: undefined,
+  onClick: undefined,
+  className: '',
+};
+
 const Button:React.FC<ButtonProps> = (props) => {
-  const { children, color, size, disabled, style, onClick, className, ...restProps } = props;
+  const { children, color, size, disabled, style, onClick, className, variant, ...restProps } = props;
   return (
     <button
-      className={clsx('pure-material-button-contained', color || 'primary', `btn-${size}`, className || '')}
+      className={clsx(`pure-material-button-${variant}`, color, `btn-${size}`, className)}
       style={{...style}}
       onClick={onClick}
       disabled={disabled}
@@ -27,5 +38,7 @@ const Button:React.FC<ButtonProps> = (props) => {
     </button>
   )
 };
+
+Button.defaultProps = defaultProps;
 
 export default Button;

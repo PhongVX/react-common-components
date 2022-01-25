@@ -27,6 +27,14 @@ Default.args = {
     color: 'primary'
 };
 
+export const ButtonOutlined = Template.bind({});
+
+ButtonOutlined.args = {
+    /*👇 The args you need here will depend on your component */
+    variant: 'outlined',
+    children: 'Outlined'
+};
+
 export const Primary = Template.bind({});
 
 Primary.args = {
