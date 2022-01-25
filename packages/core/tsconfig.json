@@ -4,14 +4,14 @@
     "allowJs": true,
     "declaration": true,
     "emitDeclarationOnly": true,
-    "esModuleInterop":false,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "jsx": "react",
     "baseUrl": "./",
-    "paths": {
-        "~/*": ["packages/*"],
-    }
+    "outDir": "./build"
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

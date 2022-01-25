@@ -1,0 +1,18 @@
+@import "color-variables";
+
+// 1. Colors
+// ==========================================================================
+$primary: color("primary", "base");
+$secondary: color("secondary", "base");
+$green: color("green", "base");
+$red: color("red", "base");
+$light-blue: color("light-blue", "darken-1");
+
+$primary-color: $primary !default;
+$primary-color-light: lighten($primary, 15%) !default;
+$primary-color-dark: darken($primary, 15%) !default;
+
+$secondary-color: $secondary !default;
+$success-color: $green !default;
+$error-color: $red !default;
+$link-color: $light-blue !default;

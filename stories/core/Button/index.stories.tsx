@@ -9,60 +9,72 @@ export default {
     */
     title: 'Core/Button',
     component: Button,
+      // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+    argTypes: {
+        
+    },
   } as ComponentMeta<typeof Button>;
 
   //👇 We create a “template” of how args map to rendering
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} > Button </Button>;
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 
 Default.args = {
     /*👇 The args you need here will depend on your component */
+    children: 'Default'
 };
 
 export const Primary = Template.bind({});
 
 Primary.args = {
     /*👇 The args you need here will depend on your component */
-    color: 'primary'
+    color: 'primary',
+    children: 'Primary'
 };
 
 export const Secondary = Template.bind({});
 
 Secondary.args = {
     /*👇 The args you need here will depend on your component */
-    color: 'secondary'
+    color: 'secondary',
+    children: 'Secondary'
 };
 
 
 export const Disabled = Template.bind({});
 
 Disabled.args = {
-    disabled: true
+    disabled: true,
+    children: 'Disabled'
 };
 
 export const SizeSmall = Template.bind({});
 
 SizeSmall.args = {
-    size: 'small'
+    size: 'small',
+    children: 'Small'
 };
 
 export const SizeMedium = Template.bind({});
 
 SizeMedium.args = {
-    size: 'medium'
+    size: 'medium',
+    children: 'Medium'
 };
 
 export const SizeLarge = Template.bind({});
 
 SizeLarge.args = {
-    size: 'large'
+    size: 'large',
+    children: 'Large'
 };
 
-const ClickMe: ComponentStory<typeof Button> = (args) => <Button {...args} > Click Me </Button>;
+const ClickMe: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const OnClick = ClickMe.bind({});
 
 OnClick.args = {
+    children: 'Click Me',
     onClick: () => { alert('Hello World!')}
 };

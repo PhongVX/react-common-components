@@ -1,29 +1,44 @@
 import React from 'react';
-import { combineClasses } from '../../../utils/UIUtil';
+import clsx from 'clsx';
 import './styles.scss';
 
-interface ButtonProps {
+export interface ButtonProps {
   children?: any
   size?: 'medium' | 'large' | 'small'
   color?: 'primary' | 'secondary'
+  variant?: 'contained' | 'outlined' | 'text'
   disabled?: boolean
   style?: object
-  onClick?: (e: any) => void
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
   className?: string
 }
 
-const Button = (props: ButtonProps) => {
-  const { children, color, size, disabled, style, onClick, className } = props;
+const defaultProps:ButtonProps = {
+  children: '',
+  size: 'medium',
+  color: 'primary',
+  variant: 'text',
+  disabled: false,
+  style: undefined,
+  onClick: undefined,
+  className: '',
+};
+
+const Button:React.FC<ButtonProps> = (props) => {
+  const { children, color, size, disabled, style, onClick, className, ...restProps } = props;
   return (
     <button
-      className={combineClasses('btn', color || 'primary' ,'waves-effect', 'waves-light', `btn-${size}`, className || '')}
+      className={clsx('pure-material-button-contained', color || 'primary', `btn-${size}`, className || '')}
       style={{...style}}
       onClick={onClick}
       disabled={disabled}
+      {...restProps}
     >
       {children}
     </button>
   )
 };
+
+Button.defaultProps = defaultProps;
 
 export default Button;

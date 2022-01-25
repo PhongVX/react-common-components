@@ -1,6 +1,8 @@
 import 'materialize-css/dist/css/materialize.min.css';
-import '../../styles/styles.scss';
+import '../../styles/common.scss';
 
-import ButtonComponent from './Button';
+import ButtonComponent, {ButtonProps}  from './Button';
+import TextFieldComponent, {TextFieldProps}  from './TextField';
 
-export const Button = ButtonComponent;
+export const Button: React.FC<ButtonProps> = ButtonComponent;
+export const TextField:React.FC<TextFieldProps>  = TextFieldComponent;
