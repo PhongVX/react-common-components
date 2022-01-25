@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import './styles.scss';
+import './button.scss';
 
 export interface ButtonProps {
   children?: any
