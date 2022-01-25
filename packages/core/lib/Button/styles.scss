@@ -8,7 +8,6 @@
     border-radius: 4px;
     padding: 0 16px;
     min-width: 64px;
-    height: 36px;
     vertical-align: middle;
     text-align: center;
     text-overflow: ellipsis;
@@ -114,7 +113,6 @@
     border-radius: 4px;
     padding: 0 16px;
     min-width: 64px;
-    height: 36px;
     vertical-align: middle;
     text-align: center;
     text-overflow: ellipsis;
@@ -196,4 +194,17 @@
 
 .pure-material-button-outlined:disabled::after {
     opacity: 0;
+}
+
+.pure-button-small {
+    font-size: 12px;
+    padding: 1px 15px;
+}
+.pure-button-medium {
+    font-size: 14px;
+    padding: 2px 20px;
+}
+.pure-button-large {
+    font-size: 16px;
+    padding: 4px 25px;
 }

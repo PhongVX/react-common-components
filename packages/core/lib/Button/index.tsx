@@ -28,7 +28,7 @@ const Button:React.FC<ButtonProps> = (props) => {
   const { children, color, size, disabled, style, onClick, className, variant, ...restProps } = props;
   return (
     <button
-      className={clsx(`pure-material-button-${variant}`, color, `btn-${size}`, className)}
+      className={clsx(`pure-material-button-${variant}`, color, `pure-button-${size}`, className)}
       style={{...style}}
       onClick={onClick}
       disabled={disabled}
