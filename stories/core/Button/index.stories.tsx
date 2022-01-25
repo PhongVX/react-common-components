@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import {Button} from 'packages/core';
 //👇 This default export determines where your story goes in the story list
 export default {
@@ -10,9 +11,9 @@ export default {
     title: 'Core/Button',
     component: Button,
       // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-    argTypes: {
-        
-    },
+    argTypes: { 
+        onClick: { action: 'clicked' },
+    }
   } as ComponentMeta<typeof Button>;
 
   //👇 We create a “template” of how args map to rendering
@@ -75,6 +76,5 @@ const ClickMe: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const OnClick = ClickMe.bind({});
 
 OnClick.args = {
-    children: 'Click Me',
-    onClick: () => { alert('Hello World!')}
+    children: 'Click Me'
 };
