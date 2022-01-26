@@ -1,5 +1,4 @@
 /// <reference types="react" />
-import 'materialize-css/dist/css/materialize.min.css';
 import '../../styles/common.scss';
 import { ButtonProps } from './Button';
 import { TextFieldProps } from './TextField';

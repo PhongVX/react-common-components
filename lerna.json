@@ -1,4 +1,12 @@
 {
+  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish",
+      "registry": "https://registry.npmjs.org"
+    }
+  },
   "packages": [
     "packages/*"
   ],

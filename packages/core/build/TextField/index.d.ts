@@ -1,9 +1,13 @@
 import React from 'react';
+import './textField.scss';
 export interface TextFieldProps {
-    name: string;
+    label?: string;
     id?: string;
     type?: string;
-    label?: string;
+    style?: object;
+    fullWidth?: boolean;
+    error?: boolean;
+    helperText?: string;
 }
 declare const TextField: React.FC<TextFieldProps>;
 export default TextField;
