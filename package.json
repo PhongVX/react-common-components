@@ -24,5 +24,8 @@
     "lerna": "^4.0.0",
     "react-docgen-typescript": "^2.2.2",
     "tsconfig-paths-webpack-plugin": "^3.5.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
