@@ -1,6 +1,6 @@
 {
   "name": "anhlamweb-core",
-  "version": "0.0.8",
+  "version": "0.0.15",
   "description": "",
   "main": "build/index.js",
   "directories": {
@@ -12,7 +12,8 @@
     "type-check:watch": "npm run type-check -- --watch",
     "build": "npm run clean-build && npm run build:types && npm run build:js",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel lib --out-dir build --extensions \".ts,.tsx\" --source-maps inline"
+    "build:js": "babel lib --out-dir build --extensions \".ts,.tsx\" --source-maps inline",
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -31,8 +32,5 @@
     "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "ceda76e72b147e3877a6511059340b3520dab983"
+  "gitHead": "67ce72af971be1bbd026e059a872046c41a20233"
 }

@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "postinstall": "node postinstall.js"
+    "build-storybook": "build-storybook"
   },
   "author": "Phong Võ",
   "license": "ISC",
