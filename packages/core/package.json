@@ -31,5 +31,8 @@
     "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
   },
-  "gitHead": "b3319323127b9cad053d1225d7dc1deda7f3a218"
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "ceda76e72b147e3877a6511059340b3520dab983"
 }
