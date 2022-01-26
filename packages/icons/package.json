@@ -1,6 +1,6 @@
 {
   "name": "anhlamweb-icons",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "",
   "main": "build/index.js",
   "directories": {
@@ -9,7 +9,7 @@
   "scripts": {
     "clean-build": "rimraf ./build",
     "build": "npm run clean-build && babel lib --out-dir build --extensions \".ts,.tsx\" --source-maps inline",
-    "prepublish":"npm run build"
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
