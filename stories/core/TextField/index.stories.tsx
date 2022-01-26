@@ -39,7 +39,7 @@ Error.args = {
     type: 'text',
     fullWidth: true,
     error: true,
-    value: 'Hello'
+    defaultValue: 'Hello'
 };
 
 export const ErrorWithHelperText = Template.bind({});
@@ -50,5 +50,5 @@ ErrorWithHelperText.args = {
     fullWidth: true,
     error: true,
     helperText: 'An error has occurred',
-    value: 'Hello World'
+    defaultValue: 'Hello World'
 };
