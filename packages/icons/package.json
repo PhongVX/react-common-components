@@ -23,6 +23,5 @@
     "@babel/preset-typescript": "^7.16.7",
     "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
-  },
-  "gitHead": "ac08ac6df0b57231ac6e8e2fea24aa2038e7be9f"
+  }
 }
