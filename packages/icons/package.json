@@ -1,6 +1,6 @@
 {
   "name": "anhlamweb-icons",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "",
   "main": "build/index.js",
   "directories": {
@@ -27,5 +27,5 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "gitHead": "c21dd939c07cdf6f01fef32bc9580c566139eeb4"
+  "gitHead": "dd6eb9bf51cf613720a0bcf8768f4a1c45421abe"
 }
