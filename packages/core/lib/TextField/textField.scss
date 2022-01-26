@@ -124,3 +124,36 @@
         }
     }
 }
+
+.pure-textfield-helpertext {
+    font-size: small;
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+}
+.pure-textfield-helpertext-error{
+    color:red;
+}
+.pure-textfield-error > input + span,
+.pure-textfield-error > textarea + span {
+    color: red;
+}
+
+.pure-textfield-error > input:focus + span,
+.pure-textfield-error > textarea:focus + span {
+    color: red;
+}
+
+.pure-textfield-error > input,
+.pure-textfield-error > textarea {
+    border-bottom-color: red;
+    caret-color: red;
+}
+
+.pure-textfield-error > input:hover,
+.pure-textfield-error > textarea:hover {
+    border-bottom-color: red;
+}
+
+.pure-textfield-error > input + span::after,
+.pure-textfield-error > textarea  + span::after {
+    background-color: red;
+}
