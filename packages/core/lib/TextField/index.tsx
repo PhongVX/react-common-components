@@ -11,6 +11,7 @@ export interface TextFieldProps {
   fullWidth?: boolean
   error?: boolean
   helperText?: string
+  disabled?:boolean
 }
 
 const TextField:React.FC<TextFieldProps> = (props) => {

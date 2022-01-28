@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import {TextField} from 'packages/core';
+import { Disabled } from '../Button/index.stories';
 
 export default {
     title: 'Core/TextField',
@@ -51,4 +52,14 @@ ErrorWithHelperText.args = {
     error: true,
     helperText: 'An error has occurred',
     defaultValue: 'Hello World'
+};
+
+export const DisabledTextField = Template.bind({});
+
+DisabledTextField.args = {
+    label: 'Disabled',
+    type: 'text',
+    fullWidth: true,
+    defaultValue: '',
+    disabled: true
 };

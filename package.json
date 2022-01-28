@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=d3bedba65116"
   },
   "author": "Phong Võ",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "@storybook/addon-links": "^6.4.14",
     "@storybook/react": "^6.4.14",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.4.1",
     "lerna": "^4.0.0",
     "react-docgen-typescript": "^2.2.2",
     "tsconfig-paths-webpack-plugin": "^3.5.2"
