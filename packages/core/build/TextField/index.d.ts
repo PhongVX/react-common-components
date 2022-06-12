@@ -8,6 +8,7 @@ export interface TextFieldProps {
     fullWidth?: boolean;
     error?: boolean;
     helperText?: string;
+    disabled?: boolean;
 }
 declare const TextField: React.FC<TextFieldProps>;
 export default TextField;
