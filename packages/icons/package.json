@@ -1,6 +1,6 @@
 {
   "name": "anhlamweb-icons",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "",
   "main": "build/index.js",
   "directories": {
@@ -25,5 +25,5 @@
     "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
   },
-  "gitHead": "67ce72af971be1bbd026e059a872046c41a20233"
+  "gitHead": "1963fe9b1067d1069d7733cf32d7fdd6aedde2b5"
 }
